@@ -1,0 +1,36 @@
+{
+  "name": "people-power-backend",
+  "version": "1.0.0",
+  "description": "Platform for citizens to share views and admins to moderate",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "migrate": "node src/migrations/runMigrations.js"
+  },
+  "keywords": [
+    "civic-engagement",
+    "platform",
+    "moderation",
+    "citizen-views"
+  ],
+  "author": "icec7560-creator",
+  "license": "BSL-1.0",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.1.2",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "express-validator": "^7.0.0",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  }
+}
